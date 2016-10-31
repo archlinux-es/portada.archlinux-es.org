@@ -1,4 +1,3 @@
-www.archlinux.fr
-================
+Theme de WordPress para archlinux-es.org
 
-Modif archlinux.fr (wordpress)
+Basado en theme de archlinux.fr
