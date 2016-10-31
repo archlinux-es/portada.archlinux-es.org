@@ -3,14 +3,14 @@ $GLOBALS['archfr']['site_url'] = "//archlinux.fr";
 
 /* nav_link: array (key => array (label, link, title)) */
 $GLOBALS['archfr']['nav_link'] = array (
-    "home"      => array ("Accueil", "//www.archlinux.fr/", "anb-home", ""),
-    "forum"     => array ("Forum", "//forums.archlinux.fr/", "anb-forums", ""),
-    "wiki"      => array ("Wiki", "//wiki.archlinux.fr/", "anb-wiki", ""),
-    "bug"       => array ("Bugs", "https://bugs.archlinux.org/", "anb-bugs", "Lien vers archlinux.org"),
-    "packages"  => array ("Paquets", "https://www.archlinux.org/packages/", "anb-packages", "Lien vers archlinux.org"),
-    "aur"       => array ("AUR", "https://aur.archlinux.org/index.php?setlang=fr", "anb-aur", "Lien vers archlinux.org"),
-    "download"  => array ("Télécharger", "//www.archlinux.fr/telecharger", "anb-download", ""),
-    "planet"    => array ("Planète", "//planet.archlinux.fr/", "anb-planet", ""),
+    "home"      => array ("Portada", "//portada.archlinux-es.org/", "anb-home", ""),
+    "forum"     => array ("Forum", "//foros.archlinux-es.org/", "anb-forums", ""),
+    "wiki"      => array ("Wiki", "//wiki.archlinux.org/", "anb-wiki", ""),
+    "bug"       => array ("Bugs", "https://bugs.archlinux.org/", "anb-bugs", "Enlace a archlinux.org"),
+    "packages"  => array ("Paquetes", "https://www.archlinux.org/packages/", "anb-packages", "Enlace a archlinux.org"),
+    "aur"       => array ("AUR", "https://aur.archlinux.org/index.php?setlang=fr", "anb-aur", "Enlace a archlinux.org"),
+    "download"  => array ("Descargar", "//portada.archlinux-es.org/descarga", "anb-download", ""),
+    "planet"    => array ("Planeta", "//planeta.archlinux-es.org/", "anb-planet", ""),
 );
 
 function print_arch_header($selected = "home", $utf8 = true)
@@ -19,7 +19,7 @@ function print_arch_header($selected = "home", $utf8 = true)
 
 <div id="archnavbar" class="<?php echo $GLOBALS['archfr']['nav_link'][$selected][2]; ?>">
     <div id="archnavbarlogo">
-        <h1><a href="//archlinux.fr" title="Arch Linux">Arch Linux</a></h1>
+        <h1><a href="//archlinux-es.org" title="Arch Linux">Arch Linux</a></h1>
     </div>
     <div id="archnavbarmenu">
         <i id="archnavbaropenmenu"></i>
@@ -43,7 +43,7 @@ function print_arch_header($selected = "home", $utf8 = true)
 
 function print_arch_favicon()
 {
-    echo '<link rel="icon" href="' . $GLOBALS['archfr']['site_url'] . '/commun/images/favicon.ico" type="image/png" />';
+    echo '<link rel="icon" href="' . $GLOBALS['archfr']['site_url'] . 'commun/images/favicon.ico" type="image/png" />';
 }
 
 function print_arch_footer($complement = "", $utf8 = true)
@@ -51,13 +51,13 @@ function print_arch_footer($complement = "", $utf8 = true)
 ?>
 
 <div id="footer">
-    <p>Design depuis
-        <a href="https://www.archlinux.org" title="Design d'Archlinux.org">Archlinux.org</a>
+    <p>Diseño por
+        <a href="https://www.archlinux.org" title="Archlinux.org">Archlinux.org</a>
         <br />
         <?php
             if ($complement != '')
                 echo $complement . "<br/>";
-            $str = "© 2016 Archlinux.fr ~ Communauté Francophone Arch Linux";
+            $str = "© 2016 Archlinux-es.org ~ Comunidad Hispana de Arch Linux";
             if (!$utf8)
                 $str = utf8_decode($str);
             echo $str;

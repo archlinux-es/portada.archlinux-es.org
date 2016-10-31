@@ -3,16 +3,16 @@
 $feeds = array(
     array(
         'url'        => 'https://www.archlinux.org/feeds/packages/',
-        'title'      => 'Derniers paquets',
+        'title'      => 'Ultimos paquetes',
         'more'       => 'https://www.archlinux.org/packages/?sort=-last_update',
-        'more_title' => 'Derniers paquets',
+        'more_title' => 'Ultimos paquetes',
         'max'        => 15
     ),
     array(
         'url'        => 'https://afur.archlinux.fr/feed.php',
         'title'      => '[archlinuxfr]',
         'more'       => 'https://afur.archlinux.fr/',
-        'more_title' => 'Derniers paquets',
+        'more_title' => 'Ultimos paquetes',
         'max'        => 10
     )
 );

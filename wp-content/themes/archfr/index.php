@@ -7,7 +7,7 @@
         <p class="article-info"><?php the_date(); ?> - <?php the_author(); ?></p>
         <?php the_content(); ?>
     <?php endwhile; else: ?>
-        <p>Désolé, aucun article ne correspond à votre recherche.</p>
+        <p>No se encontraron noticias relacionadas.</p>
     <?php endif; ?>
 
 </div>

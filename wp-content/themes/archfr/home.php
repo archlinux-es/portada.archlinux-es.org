@@ -9,12 +9,12 @@
         ?></div> <!-- #intro -->
 
         <div id="news">
-            <?php $category_link = get_category_link(get_cat_ID('Nouvelles')); ?>
+            <?php $category_link = get_category_link(get_cat_ID('Noticias')); ?>
             <h3>
-                <a href="<?php echo $category_link; ?>" title="Explorer les archives">Dernières nouvelles</a>
+                <a href="<?php echo $category_link; ?>" title="Explorar el archivo">Ultimas noticias</a>
                 <span class="arrow"></span>
             </h3>
-            <a href="<?php echo bloginfo('rss2_url') ?>" title="RSS Archlinux.fr" class="rss-icon"><img src="<?php echo bloginfo('url'); ?>/wp-includes/images/rss.png" alt="RSS Feed" /></a>
+            <a href="<?php echo bloginfo('rss2_url') ?>" title="RSS Archlinux-es.org" class="rss-icon"><img src="<?php echo bloginfo('url'); ?>/wp-includes/images/rss.png" alt="RSS Feed" /></a>
 
             <?php global $query_string; query_posts($query_string . '&posts_per_page=5'); ?>
             <?php while (have_posts()): the_post(); ?>
@@ -26,7 +26,7 @@
             <?php endwhile; ?> <!-- newest -->
 
             <h3>
-                <a href="<?php echo $category_link; ?>" title="Explorer les archives">Nouvelles plus anciennes</a>
+                <a href="<?php echo $category_link; ?>" title="Explorar el archivo">Noticias anteriores</a>
                 <span class="arrow"></span>
             </h3>
             <dl class="newslist">

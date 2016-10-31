@@ -3,7 +3,7 @@
     <div id="pkgsearch" class="widget">
         <form id="pkgsearch-form" method="get" action="https://www.archlinux.org/packages/">
             <fieldset>
-                <label for="pkgsearch-field">Chercher un paquet :</label>
+                <label for="pkgsearch-field">Buscar un paquete:</label>
                 <input id="pkgsearch-field" type="text" value="" name="q" id="q" size="20" maxlength="200" />
             </fieldset>
         </form>
