@@ -15,9 +15,11 @@
             <h3><?php echo $feed->title; ?> <span class="more">(<a href="<?php echo $feed->more ?>" title="<?php echo $feed->more_title; ?>">plus</a>)</span></h3>
             <a href="<?php echo $feed->url; ?>" title="<?php echo $feed->title ?>"
       class="rss-icon"><img src="<?php echo bloginfo('url'); ?>/wp-includes/images/rss.png" alt="RSS Feed" /></a>
-            <table>
+
+
+	    <table>
             <?php if (empty($feed->items)): ?>
-                <tr><td colspan="2">Aucune entrée.</td></tr>
+                <tr><td colspan="2">Entradas.</td></tr>
             <?php else: ?>
                 <?php foreach ($feed->items as $item): ?>
                 <tr>
@@ -39,8 +41,8 @@
     </div>
 
     <div id="nav-sidebar" class="widget"><?php 
-        setup_postdata(get_post(125)); // Links
-        the_content();
+//        setup_postdata(get_post(125)); // Links
+//        the_content();
     ?></div> <!-- #sidebar -->
 
 </div> <!-- #content-right -->
