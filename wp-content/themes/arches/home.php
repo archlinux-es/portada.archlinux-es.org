@@ -4,7 +4,7 @@
 <div id="content-left-wrapper">
     <div id="content-left">
         <div id="intro" class="box"><?php
-            setup_postdata(get_post(120)); // Welcome
+            setup_postdata(get_post(7)); // Post de presentacion de Arch Hispano el id 7
             the_content();
         ?></div> <!-- #intro -->
 
