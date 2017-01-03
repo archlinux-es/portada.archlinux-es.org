@@ -5,8 +5,8 @@
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
         <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
         <style type="text/css" media="screen">
-            @import url(<?php bloginfo('stylesheet_url'); ?>);
-        </style>
+		@import url(<?php echo get_stylesheet_uri(); ?>);
+	</style>
         <?php print_arch_favicon(); ?>
         <?php wp_head(); ?>
     </head>
